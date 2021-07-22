@@ -31,7 +31,7 @@
 		//define valores de saida
 		$("#fee-info").html(fee+"%");
 		$("#value-final-info").html(final_val.toFixed(2));
-		$("#part-value-info").html(single_val.toFixed(2));
+		$("#part-value-info").html("R$ "+single_val.toFixed(2));
 		
 		$("#results").show();
 		
