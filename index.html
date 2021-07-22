@@ -1,0 +1,56 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript" src="js/general.js"></script> 
+<script type="text/javascript" src="js/materialize.js"></script> 
+<script type="text/javascript" src="js/maskmoney.js"></script> 
+<link type="text/css" rel="stylesheet" href="css/custom.css" />
+<link type="text/css" rel="stylesheet" href="css/materialize.css" />
+</head>
+<body>
+	<div class="container row">
+	<div class="col s3"></div>
+	<div class="col s6">
+	
+		<h4>Simulador de empréstimo para aquisição de imóveis</h4>
+	<BR>
+		<div class="card">
+		<form id="form-send-loan" action="javascript:void(null)">
+		<div class="input-field mobileadj">
+			  <i class="material-icons prefix">attach_money</i> 
+			  <input id="place-loan-value" name="place-loan-value" class="price" type="text" required>
+			  <label for="place-loan-value">Valor do empréstimo <span class="redtext">*</span></label>
+		</div>		
+		
+		<div class="input-field  mobileadj">
+			  <i class="material-icons prefix">home</i> 
+			  <input id="place-value" name="place-value" class="price" type="text" required>
+			  <label for="place-value">Valor do imóvel <span class="redtext">*</span></label>
+		</div>
+			<legend id="payment-limit">Prazo de pagamento</legend>
+		   <p class="range-field" id="loan-needed">
+			  <input type="range" id="loan-val" value="12" min="6" step="6" max="120" />
+			</p>
+			
+			<button class="waves-effect waves-light btn"><i class="material-icons right">send</i>Enviar informações</button>
+		</form>
+		</div>
+		
+		<section id="results">
+		<span class="info"><text>Taxa de juros ao mês:</text> <text id="fee-info">-</text></span>
+		<span class="info"><text>Valor das parcelas:</text> <text id="part-value-info">-</text></span>
+			<span class="info"><text>Valor final R$ </text> <text id="value-final-info">-</text></span>
+		</section>
+	
+	</div>
+	
+	<div class="col s3"></div>
+	
+
+		
+	</div>
+	
+	
+</body>
+</html>
